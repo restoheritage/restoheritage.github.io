@@ -379,7 +379,7 @@ a.popup-close{
 .cuisine-slideshow{
     display: flex;
     flex-direction: row;
-    background: rgba(0, 0, 0, 0.7) url('/Homepage/Assets/waiterserving.jpg');
+    background: rgba(0, 0, 0, 0.7) url('/HomePage/Assets/waiterserving.jpg');
     height: 700px;
     background-position: center;
     background-size: cover;
