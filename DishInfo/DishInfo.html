@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobster Tail with Huitlacoche Sauce</title>
+    <link rel="stylesheet" href="./DishInfo.css">
+</head>
+<body>
+    <div class="navbar">
+        <!-- ini buat logo yg kiri atas -->
+        <div class="logo">
+            <img src="../Assets/Heritage Logo.png" alt="LogoDinion">
+        </div>
+        <!-- buat navbar tengah -->
+        <ul>
+            <li class = "home"><a href="../index.html">Home</a></li>     
+            <li class = "menu"><a href="../Menu/html/bestseller.html">Menu</a></li>
+            <!--ini buat dropdown -->
+            <li class = "orderList">
+                <div class="ordertext">Order List</div> 
+                <ul class="dropdown">
+                    <li><a href="../PendingOrder/OrderList-Pending.html">Pending Order</a></li>
+                    <li><a href="../OrderStatus/orderList-orderStatus.html">Order Status</a></li>
+                </ul> 
+            </li>     
+            <li><a href="../Review/Review.html">Review</a></li>  
+        </ul>
+        <!-- ini buat logo bell -->
+        <div class="waiter">
+            <a href="#popup">
+                <img src="../Assets/waitericon.png" alt="WaiterIcon" id="waiter-icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="backbutton">
+            <a href="/Menu/html/MainCourse.html"><img src="../DishInfo/Assets/backbutton.png" alt="backbutton"></a>
+        </div>
+        <div class="uppercontent">
+            <div class="dish-video">
+                <video autoplay muted loop>
+                    <source src="../DishInfo/Assets/LobsterTail.mp4"
+                    type = "video/mp4">
+                </video>
+            </div>
+            <div class="dishtext">
+                <div class="dishtitle">
+                    Lobster Tail with Huitlacoche Sauce
+                </div>
+                <div class="dishdesc">
+                    Lobster Tail &#8226 Huitlacoche &#8226 Puffed Corn Silk &#8226 Tamarind & Husk Powder
+                    <br>&#8226 Chile &#8226 Charred Corn &#8226 Micro Cumin &#8226 Cilantro Blossom <br>
+                    Spicy Level: 1 / 5<br><br>
+                    Price: Rp.870.000
+                </div>
+            </div>
+        </div>
+        <div class="lowercontent">
+            <img src="./Assets/Screenshot (208).png" alt="">
+            <img src="./Assets/Screenshot (209).png" alt="">
+            <img src="./Assets/Screenshot (210).png" alt="">
+            <img src="./Assets/Screenshot (211).png" alt="">
+            <img src="./Assets/Screenshot (212).png" alt="">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target = _blank>
+                <img src="../Assets/fbFix.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target = _blank>
+                <img src="../Assets/igFix.png" alt="">
+            </a>
+            <a href="https://twitter.com/?lang=en" target = _blank>
+                <img src="../Assets/twitFix.png" alt="">
+            </a>
+        </div>
+        <div class="trademark">
+            &copy 2020. All Rights Reserved. Heritage
+        </div>
+        <div class="watermark">
+            Powered by Dinion
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Please wait, the waiter is on the way to your table.</p>
+        <a class="popup-close" href="#closed">X</a>
+    </div>
+
+    <audio src="../Assets/mixkit-notification-bike-bell-594.wav" id="waiter-audio"></audio>
+
+    <script>
+        document.getElementById("waiter-icon").onclick=()=>{
+            document.getElementById("waiter-audio").play();
+        }
+    </script>
+</body>
+</html> 
