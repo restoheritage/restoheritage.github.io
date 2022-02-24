@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bestseller</title>
+    <link rel="stylesheet" href="../css/bestseller.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <!-- ini buat logo yg kiri atas -->
+        <div class="logo">
+            <img src="../../Assets/Heritage Logo.png" alt="LogoDinion">
+        </div>
+        <!-- buat navbar tengah -->
+        <ul>
+            <li class = "home"><a href="../../HomePage/Homepage.html">Home</a></li>     
+            <li class="menunav"><a href="">Menu</a></li>
+            <!--ini buat dropdown -->
+            <li class = "orderList" id="orderlistbutton">Order List
+                <ul class="dropdown">
+                    <li><a href="../../PendingOrder/OrderList-Pending.html">Pending Order</a></li>
+                    <li><a href="../../OrderStatus/orderList-orderStatus.html">Order Status</a></li>
+                </ul> 
+            </li>     
+            <li><a href="../../Review/Review.html">Review</a></li>  
+        </ul>
+        <!-- ini buat logo bell -->
+        <div class="waiter">
+            <a href="#popup">
+                <img src="../../Assets/waitericon.png" alt="WaiterIcon" id="waiter-icon">
+            </a>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="menu">
+            <a href="./Starters.html"><button class="button">Starters</button></a>
+            <a href="./MainCourse.html"><button class="button">Main Course</button></a>
+            <a href="./Desserts.html"><button class="button">Desserts</button></a>
+            <a href="./Sides.html"><button class="button">Sides</button></a>
+            <a href="./Drinks.html"><button class="button">Drinks</button></a>
+        </div>
+        <hr>
+
+        <div class="bestsellerTitle"><h2>Everyone's Favorites</h2></div>
+
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <span id="slide-4"></span>
+            <div class="image-container">
+                <div class="polaroid">
+                    <img src="../Assets/pic0.jpg" class="slide" width="750" height="450">
+                    <div class="container">
+                    <p>Foie-Gras and Duck Meat with Sweet Sauce</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img src="../Assets/pic1.jpg" class="slide" width="750" height="450">
+                    <div class="container">
+                    <p>Classic Grilled-Beef</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img src="../Assets/pic2.jpg" class="slide" width="750" height="450">
+                    <div class="container">
+                    <p>Caesar Prawn Salad</p>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <img src="../Assets/pic3.jpg" class="slide" width="750" height="450">
+                    <div class="container">
+                    <p>Lobster Tail with Huitlacoche Sauce</p>
+                    </div>
+                </div>
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+          <a href="#slide-4"></a>
+        </div>
+        </div>
+    </section>
+
+
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target = _blank>
+                <img src="../../Assets/fbFix.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target = _blank>
+                <img src="../../Assets/igFix.png" alt="">
+            </a>
+            <a href="https://twitter.com/?lang=en" target = _blank>
+                <img src="../../Assets/twitFix.png" alt="">
+            </a>
+        </div>
+        <div class="trademark">
+            &copy 2020. All Rights Reserved. Heritage
+        </div>
+        <div class="watermark">
+            Powered by Dinion
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Please wait, the waiter is on the way to your table.</p>
+        <a class="popup-close" href="#closed">X</a>
+    </div>
+
+    <audio src="../../Assets/mixkit-notification-bike-bell-594.wav" id="waiter-audio"></audio>
+    <!-- <script src="../js/main.js"></script> -->
+
+    <script>
+        document.getElementById("waiter-icon").onclick=()=>{
+        document.getElementById("waiter-audio").play();
+    }
+    </script>
+</body>
+</html> 

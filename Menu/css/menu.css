@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* font tambahan */
+@font-face {
+    font-family: poppins-regular;
+    src: url(../../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: sf-ui-display;
+    src: url(../../Fonts/SF_UI_Display/sf-ui-display-thin-58646e9b26e8b.otf)
+}
+
+.navbar{
+    font-family: poppins-regular;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: #03041D;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: relative; */
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    /* background-color: white; */
+    /* padding: 5px; */
+}
+
+.lobster img{
+    width: 150px;
+    height: 100px;
+    
+}
+
+/* buat ilangin yang bulet depan */
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar li{
+    padding: 20px 50px;
+}
+
+.menunav a{
+    border-bottom: 5px solid #BEBEC7;
+}
+
+.pending a{
+    border-bottom: 5px solid #BEBEC7;
+}
+
+/* logo */
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+/* waiter */
+.waiter img{
+    width: 80px;
+    height: 80px;
+}
+
+.navbar-logo{
+    position: absolute;
+    left: 40px;
+    padding-top: 10px 0px;
+}
+
+.navbar-waiter img{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-waiter{
+    right:40px;
+    position: absolute;
+    padding-top: 10px 0px;
+}
+
+
+
+.footer{
+    font-family: poppins-regular;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    gap: 5px;
+}
+
+.social-media img{
+    width: 30px;
+    height: 30px;
+}
+
+/* dropdowon */
+/* dropdown order list */
+/* .navbar ul li .orderList{
+    position: relative;
+} */
+
+.navbar ul li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    top: 80px;
+    left: 483px;
+    /* border-radius: 10px; */
+    /* min-width: 200px; */
+}
+
+.navbar ul li .dropdown li a{
+    color: #03041D;
+}
+
+.navbar ul li:hover .dropdown{
+    display: flex;
+    flex-direction: row;
+    /* padding-right: 30px; */
+}
+
+.waiter a img:hover{
+    opacity: 0.8;
+}
+
+#popup{
+    visibility: hidden;
+    opacity: 0;
+    position:absolute;
+    top:3px;
+    right:3px;
+}
+
+#popup p{
+    font-family: sf-ui-display;;
+    font-size: 30px;
+}
+
+#popup:target {
+    visibility:visible;
+    opacity: 1;
+    width:600px;
+    background-color: rgba(255,255,255,0.95);
+    position: fixed;
+    top:125px;
+    left:325px;
+    right:100px;
+    bottom:100px;
+    text-align: center;
+    margin:0;
+    z-index: 1;
+    padding-top: 140px;
+    /* -webkit-transition:all 1s; */
+    /* -moz-transition:all 1s; */
+    transition:all 1s;
+}
+
+a.popup-close{
+    position: absolute;
+    top:3px;
+    right:3px;
+    background-color: #fff;
+    padding:7px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+}
+
+.content{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #FB6E3B;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .menu {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FB6E3B;
+    /* background-color: grey; */
+    /* background-color: #fff; */
+}
+
+.button{
+    background-color: #fff6ea;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 10px 30px;
+    cursor: pointer;
+    height: 60px;
+    width: 100px;
+}
+
+.button:hover{
+    box-shadow: 0 8px 8px 0 ;
+    color: #000000;
+}
+
+hr {
+    background-color: #000000;
+    border-color: #000000;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+    height: auto;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.mcfoods img{
+    width: 150px;
+    height: 100px;
+}
+
+.content-image{
+    width: 120px;
+    height: 90px;
+}
+
+.menulist{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.menutext{
+    /* background-color: #000000; */
+    width: 200px;
+    justify-content: left;
+}
+
+.menuprice{
+    /* background-color: grey; */
+    width: 100px;
+    justify-content: left;
+}
+
+.cartmin img, .cartplus img{
+    display: flex;
+    justify-content: left;
+    height: 50px;
+    width: 50px;
+}
+
+.cartplus button, .cartmin button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.minus{
+    background-color: none;
+    border: none;
+    text-decoration: none;
+}
+
+.minus:hover{
+    content: url("/Menu/Assets/minusfilled.png");
+}
+
+
+.plus:hover{
+    content: url("/Menu/Assets/plusfilled.png");
+}
+
+#starterbutton{
+    background-color: #f8d8ae;
+}
+
+.waiter a img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#maincoursebutton{
+    background-color: #f8d8ae;
+}
+
+#dessertsbutton{
+    background-color: #f8d8ae;
+}
+
+#sidesbutton{
+    background-color: #f8d8ae;
+}
+
+#drinksbutton{
+    background-color: #f8d8ae;
+}
+
+#orderlistbutton{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li .dropdown li a:hover{
+    background-color: #6cffff;
+}

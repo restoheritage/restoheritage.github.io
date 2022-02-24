@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu : Desserts</title>
+    <link rel="stylesheet" href="/Menu/css/menu.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <!-- ini buat logo yg kiri atas -->
+        <div class="logo">
+            <img src="/Assets/Heritage Logo.png" alt="LogoDinion">
+        </div>
+        <!-- buat navbar tengah -->
+        <ul>
+            <li class = "home"><a href="/index.html">Home</a></li>     
+            <li class = "menunav"><a href="bestseller.html">Menu</a></li>
+            <!--ini buat dropdown -->
+            <li class = "orderList" id="orderlistbutton">Order List
+                <ul class="dropdown">
+                    <li><a href="/PendingOrder/OrderList-Pending.html">Pending Order</a></li>
+                    <li><a href="/OrderStatus/orderList-orderStatus.html">Order Status</a></li>
+                </ul> 
+            </li>     
+            <li><a href="/Review/Review.html">Review</a></li>  
+        </ul>
+        <!-- ini buat logo bell -->
+        <div class="waiter">
+            <a href="#popup">
+                <img src="/Assets/waitericon.png" alt="WaiterIcon" id="waiter-icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="menu">
+            <a href="Starters.html"><button class="button">Starters</button></a>
+            <a href="MainCourse.html"><button class="button">Main Course</button></a>
+            <a href="Desserts.html"><button class="button" id="dessertsbutton">Desserts</button></a>
+            <a href="Sides.html"><button class="button">Sides</button></a>
+            <a href="Drinks.html"><button class="button">Drinks</button></a>
+        </div>
+        <hr>
+        
+        <div class="menulist">
+            <ul class="mcfoods">
+                <li><img id="10_img"></li>
+                <div class="menutext"><li>Baked Alaska</li></div>
+                <div class="menuprice"><li>Rp. 290.000</li></div>
+                <div class="cartmin"><button id="min-10"><img src="/Menu/Assets/minusoutline.png" class="minus"></button></div>
+                <div class="value"><p id="10">0</p></div>
+                <div class="cartplus"><button id="plus-10"><img src="/Menu/Assets/plusoutline.png" class ="plus"></button></div>
+            </ul>
+            <ul class="mcfoods">
+                <li><img id="11_img"></li>
+                <div class="menutext"><li>Ube Halaya</li></div>
+                <div class="menuprice"><li>Rp. 90.000</li></div>
+                <div class="cartmin"><button id="min-11"><img src="/Menu/Assets/minusoutline.png" class="minus"></button></div>
+                <div class="value"><p id="11">0</p></div>
+                <div class="cartplus"><button id="plus-11"><img src="/Menu/Assets/plusoutline.png" class ="plus"></button></div>
+            </ul>
+            <ul class="mcfoods">
+                <li><img id="12_img"></li>
+                <div class="menutext"><li>Potato Pakoras with Greek Yogurt</li></div>
+                <div class="menuprice"><li>Rp. 120.000</li></div>
+                <div class="cartmin"><button id="min-12"><img src="/Menu/Assets/minusoutline.png" class="minus"></button></div>
+                <div class="value"><p id="12">0</p></div>
+                <div class="cartplus"><button id="plus-12"><img src="/Menu/Assets/plusoutline.png" class ="plus"></button></div>
+            </ul>
+            <ul class="mcfoods">
+                <li><img id="13_img"></li>
+                <div class="menutext"><li>Rhubarb and Almond Custard</li></div>
+                <div class="menuprice"><li>Rp. 140.000</li></div>
+                <div class="cartmin"><button id="min-13"><img src="/Menu/Assets/minusoutline.png" class="minus"></button></div>
+                <div class="value"><p id="13">0</p></div>
+                <div class="cartplus"><button id="plus-13"><img src="/Menu/Assets/plusoutline.png" class ="plus"></button></div>
+            </ul>
+            <ul class="mcfoods">
+                <li><img id="14_img"></li>
+                <div class="menutext"><li>Peach Avocado Mousse</li></div>
+                <div class="menuprice"><li>Rp. 140.000</li></div>
+                <div class="cartmin"><button id="min-14"><img src="/Menu/Assets/minusoutline.png" class="minus"></button></div>
+                <div class="value"><p id="14">0</p></div>
+                <div class="cartplus"><button id="plus-14"><img src="/Menu/Assets/plusoutline.png" class ="plus"></button></div>
+            </ul>
+            <ul class="mcfoods">
+                <li><img id="15_img"></li>
+                <div class="menutext"><li>Whiskey and Chocolate Cake</li></div>
+                <div class="menuprice"><li>Rp. 110.000</li></div>
+                <div class="cartmin"><button id="min-15"><img src="/Menu/Assets/minusoutline.png" class="minus"></button></div>
+                <div class="value"><p id="15">0</p></div>
+                <div class="cartplus"><button id="plus-15"><img src="/Menu/Assets/plusoutline.png" class ="plus"></button></div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target = _blank>
+                <img src="/Assets/fbFix.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target = _blank>
+                <img src="/Assets/igFix.png" alt="">
+            </a>
+            <a href="https://twitter.com/?lang=en" target = _blank>
+                <img src="/Assets/twitFix.png" alt="">
+            </a>
+        </div>
+        <div class="trademark">
+            &copy 2020. All Rights Reserved. Heritage
+        </div>
+        <div class="watermark">
+            Powered by Dinion
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Please wait, the waiter is on the way to your table.</p>
+        <a class="popup-close" href="#closed">X</a>
+    </div>
+    <audio src="../../../Assets/mixkit-notification-bike-bell-594.wav" id="waiter-audio"></audio>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html> 
