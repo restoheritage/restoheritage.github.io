@@ -18,6 +18,10 @@
     src: url(/Fonts/SF_UI_Display/SFUIText-LightItalic.ttf)
 }
 
+body{
+    overflow: hidden;
+}	
+
 .navbar{
     font-family: poppins-regular;
     display: flex;
