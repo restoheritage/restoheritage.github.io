@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage: Homepage</title>
+    <link rel="stylesheet" href="./SubmitReview.css">
+</head>
+<body>
+    <div class="navbar">
+        <!-- ini buat logo yg kiri atas -->
+        <div class="logo">
+            <img src="../Assets/Heritage Logo.png" alt="LogoDinion">
+        </div>
+        <!-- buat navbar tengah -->
+        <ul>
+            <li class = "home"><a href="../index.html">Home</a></li>     
+            <li><a href="../Menu/html/bestseller.html">Menu</a></li>
+            <!--ini buat dropdown -->
+            <li class = "orderList">Order List
+                <ul class="dropdown">
+                    <li><a href="../PendingOrder/OrderList-Pending.html">Pending Order</a></li>
+                    <li><a href="../OrderStatus/orderList-orderStatus.html">Order Status</a></li>
+                </ul> 
+            </li>     
+            <li class = "review"><a href="./Review.html">Review</a></li>  
+        </ul>
+        <!-- ini buat logo bell -->
+        <div class="waiter">
+            <a href="#popup">
+                <img src="../Assets/waitericon.png" alt="WaiterIcon" id="waiter-icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="title">
+            <div class="text"><p>How's your dining experience?</p></div>
+        </div>
+        <div class="container">
+            <form method="post" action="" class="form">
+                <div class="input">
+                   <textarea class="input-field" name="input-field" id="input-field"></textarea>
+                </div>
+                <div class="button">
+                    <a href="#popup2">
+                    <input type="button" class="input-button" value="Submit" class="input-button" id="input-button">
+                    </a>
+                </div>
+            </form>           
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target = _blank>
+                <img src="../Assets/fbFix.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target = _blank>
+                <img src="../Assets/igFix.png" alt="">
+            </a>
+            <a href="https://twitter.com/?lang=en" target = _blank>
+                <img src="../Assets/twitFix.png" alt="">
+            </a>
+        </div>
+        <div class="trademark">
+            &copy 2020. All Rights Reserved. Heritage
+        </div>
+        <div class="watermark">
+            Powered by Dinion
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Please wait, the waiter is on the way to your table.</p>
+        <a class="popup-close" href="#closed">X</a>
+    </div>
+
+    <div class="popup2" id="popup2">
+        <p>Thank you for your review !</p>
+        <a class="popup-close2" href="./Review.html">X</a>
+    </div>
+
+    <div class="backbutton">
+        <a href="./Review.html"><img src="../QrCode/Assets/back button.png" alt=""></a>
+    </div>
+
+    <audio src="../Assets/mixkit-notification-bike-bell-594.wav" id="waiter-audio"></audio>
+
+    <script>
+        document.getElementById("waiter-icon").onclick=()=>{
+            document.getElementById("waiter-audio").play();
+        }
+    </script>
+</body>
+</html> 

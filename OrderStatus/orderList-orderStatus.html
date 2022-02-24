@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage: OrderList-OrderStatus</title>
+    <link rel="stylesheet" href="orderList-orderStatus.css">
+    <script src="../Menu/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <!-- ini buat logo yg kiri atas -->
+        <div class="logo">
+            <img src="../Assets/Heritage Logo.png" alt="LogoDinion">
+        </div>
+        <!-- buat navbar tengah -->
+        <ul>
+            <li class = "home"><a href="/index.html">Home</a></li>     
+            <li><a href="../Menu/html/bestseller.html">Menu</a></li>
+            <!--ini buat dropdown -->
+            <li class = "orderList">
+                <div class="ordertext">Order List</div> 
+                <ul class="dropdown">
+                    <li><a href="../PendingOrder/OrderList-Pending.html">Pending Order</a></li>
+                    <li class="orderStatus">Order Status</li>
+                </ul> 
+            </li>     
+            <li><a href="../Review/Review.html">Review</a></li>     
+        </ul>
+        <!-- ini buat logo bell -->
+        <div class="waiter">
+            <a href="#popup">
+                <img src="../Assets/waitericon.png" alt="WaiterIcon" id="waiter-icon">
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-food">
+            <div class="foods" id="foods0">
+                <ul>
+                    <li><img id="0_img"></li>
+                    <li id="0_name"></li>
+                    <li id="0_total"></li>
+                    <li id="0_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods1">
+                <ul>
+                    <li><img id="1_img"></li>
+                    <li id="1_name"></li>
+                    <li id="1_total"></li>
+                    <li id="1_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods2">
+                <ul>
+                    <li><img id="2_img"></li>
+                    <li id="2_name"></li>
+                    <li id="2_total"></li>
+                    <li id="2_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods3">
+                <ul>
+                    <li><img id="3_img"></li>
+                    <li id="3_name"></li>
+                    <li id="3_total"></li>
+                    <li id="3_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods4">
+                <ul>
+                    <li><img id="4_img"></li>
+                    <li id="4_name"></li>
+                    <li id="4_total"></li>
+                    <li id="4_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods5">
+                <ul>
+                    <li><img id="5_img"></li>
+                    <li id="5_name"></li>
+                    <li id="5_total"></li>
+                    <li id="5_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods6">
+                <ul>
+                    <li><img id="6_img"></li>
+                    <li id="6_name"></li>
+                    <li id="6_total"></li>
+                    <li id="6_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods7">
+                <ul>
+                    <li><img id="7_img"></li>
+                    <li id="7_name"></li>
+                    <li id="7_total"></li>
+                    <li id="7_status"></li> 
+                </ul>
+            </div>
+            <div class="foods" id="foods8">
+                <ul>
+                    <li><img id="8_img"></li>
+                    <li id="8_name"></li>
+                    <li id="8_total"></li>
+                    <li id="8_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods9">
+                <ul>
+                    <li><img id="9_img"></li>
+                    <li id="9_name"></li>
+                    <li id="9_total"></li>
+                    <li id="9_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods10">
+                <ul>
+                    <li><img id="10_img"></li>
+                    <li id="10_name"></li>
+                    <li id="10_total"></li>
+                    <li id="10_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods11">
+                <ul>
+                    <li><img id="11_img"></li>
+                    <li id="11_name"></li>
+                    <li id="11_total"></li>
+                    <li id="11_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods12">
+                <ul>
+                    <li><img id="12_img"></li>
+                    <li id="12_name"></li>
+                    <li id="12_total"></li>
+                    <li id="12_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods13">
+                <ul>
+                    <li><img id="13_img"></li>
+                    <li id="13_name"></li>
+                    <li id="13_total"></li>
+                    <li id="13_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods14">
+                <ul>
+                    <li><img id="14_img"></li>
+                    <li id="14_name"></li>
+                    <li id="14_total"></li>
+                    <li id="14_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods15">
+                <ul>
+                    <li><img id="15_img"></li>
+                    <li id="15_name"></li>
+                    <li id="15_total"></li>
+                    <li id="15_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods16">
+                <ul>
+                    <li><img id="16_img"></li>
+                    <li id="16_name"></li>
+                    <li id="16_total"></li>
+                    <li id="16_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods17">
+                <ul>
+                    <li><img id="17_img"></li>
+                    <li id="17_name"></li>
+                    <li id="17_total"></li>
+                    <li id="17_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods18">
+                <ul>
+                    <li><img id="18_img"></li>
+                    <li id="18_name"></li>
+                    <li id="18_total"></li>
+                    <li id="18_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods19">
+                <ul>
+                    <li><img id="19_img"></li>
+                    <li id="19_name"></li>
+                    <li id="19_total"></li>
+                    <li id="19_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods20">
+                <ul>
+                    <li><img id="20_img"></li>
+                    <li id="20_name"></li>
+                    <li id="20_total"></li>
+                    <li id="20_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods21">
+                <ul>
+                    <li><img id="21_img"></li>
+                    <li id="21_name"></li>
+                    <li id="21_total"></li>
+                    <li id="21_status"></li>
+                </ul>
+            </div>
+            <div class="foods" id="foods22">
+                <ul>
+                    <li><img id="22_img"></li>
+                    <li id="22_name"></li>
+                    <li id="22_total"></li>
+                    <li id="22_status"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="empty-container" id="empty-container">
+            <div class="empty-text">No Ongoing Order</div>
+         </div>
+    </div>
+    
+   
+
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target = _blank>
+                <img src="../Assets/fbFix.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target = _blank>
+                <img src="../Assets/igFix.png" alt="">
+            </a>
+            <a href="https://twitter.com/?lang=en" target = _blank>
+                <img src="../Assets/twitFix.png" alt="">
+            </a>
+        </div>
+        <div class="trademark">
+            &copy 2020. All Rights Reserved. Heritage
+        </div>
+        <div class="watermark">
+            Powered by Dinion
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Please wait, the waiter is on the way to your table.</p>
+        <a class="popup-close" href="#closed">X</a>
+    </div>
+    <audio src="../Assets/mixkit-notification-bike-bell-594.wav" id="waiter-audio"></audio>
+    <script src="./status.js"></script>
+</body>
+</html> 

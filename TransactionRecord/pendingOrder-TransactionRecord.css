@@ -1,0 +1,86 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* font tambahan */
+@font-face {
+    font-family: poppins-regular;
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: sf-ui-display;
+    src: url(../Fonts/SF_UI_Display/sf-ui-display-thin-58646e9b26e8b.otf)
+}
+
+.navbar{
+    font-family: poppins-reguler;
+    display: flex;
+    flex-direction: row;
+    background-color: #03041d;
+    /* align-items: center; */
+    justify-content: center;
+    color: white;
+    /* padding: 10px 0px 10px 40px; */
+}
+
+.navbar img{
+    width: 100px;
+    height: 100px;
+}
+
+.login{    
+    font-family: sf-ui-display;
+}
+
+.title{
+    text-align: center;
+}
+
+.card{
+    padding-top: 12px;
+    background-color: #fb6e3b;
+    margin: 7% auto;
+    border: solid 1px rgb(199, 199, 199);
+    width: 200px;
+    height: 175px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(105, 105, 105);
+}
+
+.form{
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.text{
+    font-family: sf-ui-display;
+    position: absolute;
+    left: 71rem;
+    top: 120px;
+    background-color: rgb(160, 160, 160);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.text a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#email{
+    height: 20px;
+}
+
+#submit{
+    width: 80px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="stylesheet" href="./paymentSuccess.css">
+    <script src="../Menu/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="top">
+            <div class="qris">
+                <div class="qristext">
+                    QRIS
+                </div>
+                <div class="qrisdesc">
+                    QR Code Standar<br>Pembayaran Nasional
+                </div>
+            </div>
+        </div>
+
+        <div class="barcode">
+            <div class="restaurant">
+                HERITAGE 
+            </div>
+            <div class="qr">
+                <img src="../QrCode/Assets/qrCode.png" alt="QrCode">
+            </div>
+        </div>
+
+        <div class="notification">
+            <ul class="notif">
+                <a class="notify" href="../TransactionRecord/pendingOrder-TransactionRecord.html">
+                    <img src="../PaymentSuccess/Assets/success.png" alt="successfull">
+                    <li>PAYMENT SUCCESSFUL!<br><br>
+                        Generating E-Receipt, Please Wait a Few Seconds...
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        Powered by Dinion
+    </div>
+
+    <audio src="./Assets/mixkit-achievement-bell-600.wav" id="success-audio"></audio>
+
+    <script src="./success.js"></script>
+</body>
+</html>

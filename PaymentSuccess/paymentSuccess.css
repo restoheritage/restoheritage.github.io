@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #FB6E3B;
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: sf-ui-display;
+    src: url(../Fonts/SF_UI_Display/sf-ui-display-light-58646b33e0551.otf)
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    padding-left: 75px;
+}
+
+.qris{
+    display: flex;
+    flex-direction: row;
+    font-family: poppins-regular;
+    color: black;
+    font-weight: bold;
+    filter: blur(1.5px);
+}
+
+.qristext{
+    font-size: 50px;
+}
+
+.qrisdesc{
+    padding-top: 15px;
+}
+
+.content{
+    text-decoration: none;
+    background-color: #FB6E3B;
+}
+
+.barcode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: blur(1.5px);
+}
+
+.qr img{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+.restaurant{
+    font-family: poppins-regular;
+    font-size: 40px;
+}
+
+.notif img{
+    width: 100px;
+    height: 100px;
+    background-color: #03041D;
+}
+
+.notification li{
+    font-family: poppins-regular;
+    font-weight: bold;
+    font-size: 15pt;
+    color: #6ce679;
+    background-color: #03041D;
+}
+
+.notification{
+    margin-top: 170px;
+    position: absolute;
+    top: 0;
+    margin-left: 465px;
+    background-color: #03041D;
+}
+
+.notification ul.notif{
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #03041D;
+}
+
+a.notify{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #03041D;
+}
+
+.notification ul{
+    list-style: none;
+    width: 350px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #03041D;
+}
+
+.footer{
+    font-family: poppins-regular;
+    display: flex;
+    padding-left: 87%;
+    right: auto;
+    filter: blur(1.5px);
+}

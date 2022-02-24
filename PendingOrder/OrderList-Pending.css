@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* font tambahan */
+@font-face {
+    font-family: poppins-regular;
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: sf-ui-display;
+    src: url(../Fonts/SF_UI_Display/sf-ui-display-light-58646b33e0551.otf)
+}
+
+.navbar{
+    font-family: poppins-regular;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: #03041D;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: relative; */
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    /* background-color: white; */
+    /* padding: 5px; */
+}
+
+.lobster img{
+    width: 150px;
+    height: 100px;
+    
+}
+
+/* buat ilangin yang bulet depan */
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar li{
+    padding: 20px 50px;
+}
+
+.navbar ul li .ordertext{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pending{
+    /* border-bottom: 5px solid #BEBEC7; */
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.pending::after{
+    content: "";
+    width: 129px;
+    height: 5px;
+    position: absolute;
+    left: 50px;
+    bottom: 18px;
+    background-color: #BEBEC7;
+}
+
+/* logo */
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+/* waiter */
+.waiter img{
+    width: 80px;
+    height: 80px;
+}
+
+.navbar-logo{
+    position: absolute;
+    left: 40px;
+    padding-top: 10px 0px;
+}
+
+.navbar-waiter img{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-waiter{
+    right:40px;
+    position: absolute;
+    padding-top: 10px 0px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #FB6E3B;
+    min-height: 468px;
+}
+
+.footer{
+    font-family: poppins-regular;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* background-color: aqua; */
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    /* background-color: black; */
+    padding: 5px 2px 0px;
+    gap: 5px;
+}
+
+.social-media img{
+    width: 30px;
+    height: 30px;
+}
+
+/* dropdowon */
+/* dropdown order list */
+/* .navbar ul li .orderList{
+    position: relative;
+} */
+
+.navbar ul li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    top: 80px;
+    left: 483px;
+    /* border-radius: 10px; */
+    /* min-width: 200px; */
+}
+
+.navbar ul li .dropdown li a{
+    color: #03041D;
+}
+
+.navbar ul li .dropdown li a:hover{
+    background-color: #6cffff;
+}
+
+
+.navbar ul li:hover .dropdown{
+    display: flex;
+    flex-direction: row;
+    /* padding-right: 30px; */
+}
+
+.waiter a img:hover{
+    opacity: 0.8;
+}
+
+#popup{
+    visibility: hidden;
+    opacity: 0;
+    position:absolute;
+    top:3px;
+    right:3px;
+}
+
+#popup p{
+    font-family: sf-ui-display;;
+    font-size: 30px;
+}
+
+#popup:target {
+    visibility:visible;
+    opacity: 1;
+    width:600px;
+    background-color: rgba(255,255,255,0.95);
+    position: fixed;
+    top:125px;
+    left:325px;
+    right:100px;
+    bottom:100px;
+    text-align: center;
+    margin:0;
+    z-index: 1;
+    padding-top: 140px;
+    /* -webkit-transition:all 1s; */
+    /* -moz-transition:all 1s; */
+    transition:all 1s;
+}
+
+a.popup-close{
+    position: absolute;
+    top:3px;
+    right:3px;
+    background-color: #fff;
+    padding:7px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+}
+
+.content{
+    font-family: sf-ui-display;
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.foods ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+    height: auto;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.content-food{
+    width: 100%;
+    /* height: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 180px; */
+}
+
+.foods img{
+    width: 120px;
+    height: 70px;
+}
+
+.payment{
+    font-family: sf-ui-display;
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.payment-container{
+    display: none;
+}
+
+.payment ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.payment ul.pay{
+    width: 30px;
+    height: auto;
+    margin-left: 220px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+a.pays{
+    text-decoration: none;
+    color: black;
+}
+
+.foods{
+    display: none;
+}
+
+.waiter a img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.empty-text{
+    width: 800px;
+    height: 405px;
+    background-color: white;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-container{
+    display: none;
+}
+

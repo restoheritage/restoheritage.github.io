@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage: Homepage</title>
+    <link rel="stylesheet" href="./HomePage/Homepage.css">
+    <script src="./Menu/Menu/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <!-- ini buat logo yg kiri atas -->
+        <div class="logo">
+            <img src="./Assets/Heritage Logo.png" alt="LogoDinion">
+        </div>
+        <!-- buat navbar tengah -->
+        <ul>
+            <li class = "home">Home</li>
+            <li><a href="/Menu/html/bestseller.html">Menu</a></li>
+            <!--ini buat dropdown -->
+            <li class = "orderList">
+                <div class="ordertext">Order List</div> 
+                <ul class="dropdown">
+                    <li><a href="./PendingOrder/OrderList-Pending.html">Pending Order</a></li>
+                    <li><a href="./OrderStatus/orderList-orderStatus.html">Order Status</a></li>
+                </ul> 
+            </li>     
+            <li><a href="./Review/Review.html">Review</a></li>  
+        </ul>
+        <!-- ini buat logo bell -->
+        <div class="waiter">
+            <a href="#popup">
+                <img src="./Assets/waitericon.png" alt="WaiterIcon" id="waiter-icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="homepage-title">
+            <h1>HERITAGE</h1>
+        </div>
+        <div class="homepage-desc">
+            World's Finest Heritage
+        </div>
+
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/caesar.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/foie-gras.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/grilled-beef.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/meadow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/salmon.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/scallop.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/ube-halaya.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/potato-pakoras.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/caesar.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/foie-gras.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/grilled-beef.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/meadow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/salmon.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/scallop.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/ube-halaya.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review">
+                        <div class="image">
+                            <img src="./HomePage/Assets/potato-pakoras.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="white-text1">
+        <div class="text1-title">
+            HERITAGE : FUSION OF THE WORLD'S MOST FINEST & TEMPTING DISHES
+        </div>
+        <div class="text-underline">
+        </div>
+        <div class="text1-desc">
+            We searched through the edges of the world to bring out the best of every cuisines.
+            <br>Our hospitality and service will make you feel at home.
+            <br>Expect the best, as the dining experience is modern and luxurious.
+        </div>
+    </div>
+
+    <div class="cuisine-slideshow">
+        <div class="buttons">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+        </div>
+        
+        <div class="cuisine-slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <span id="slide-4"></span>
+            <div class="image-container">
+                <div class="polaroid">
+                    <img src="./HomePage/Assets/pizza.jpg" class="dish-slide" width="750" height="450">
+                </div>
+                <div class="polaroid">
+                    <img src="./HomePage/Assets/steak delicious.jpg" class="dish-slide" width="750" height="450">
+                </div>
+                <div class="polaroid">
+                    <img src="./HomePage/Assets/shrimp sauce.jpg" class="dish-slide" width="750" height="450">
+                </div>
+            </div>
+        </div>
+
+        <div class="cuisine-text">
+            <p>Heritage Restaurant</p>&nbsp;was built by the Daphne family in<br>collaboration with Felesia in 1992.
+            It was built after both sides completed their trip in finding
+            amazing<br>flavours scattered across the world. Their creativities and imaginations were poured
+            into every dish,<br>making it an amazing piece of art.You are invited to join us in celebrating
+            every moments of our<br>Heritage Journey.
+        </div>
+
+    </div>
+
+    <div class="white-text1">
+        <div class="text2-title">
+            "A Recipe has No Soul. You, as the Cook,<br>must Bring Soul to the Recipe"
+            <br>-Thomas Keller
+        </div>
+    </div>
+
+    <div class="kitchen">
+        <div class="chef-pic">
+            <img src="./HomePage/Assets/chefgreen-removebg-preview.png" alt="">
+        </div>
+        <div class="kitchen-text">
+            <div class="chef-name">
+                Ivanco Budhi Nathanael
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &#8226; Head Chef of Heritage &#8226; Five Michelin Stars Chef &#8226;
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div class="contact-text">
+            <div class="contact-title">
+                RESERVE NOW! <br>
+            </div>
+            <div class="contact-desc">
+                Phone: +44 8238 492312 <br><br>
+                Email: reservations@heritage.co.uk <br><br>
+                Address: Main Street, Berkshire, SL9 2AK
+            </div>
+        </div>
+        <img src="./HomePage/Assets/settinguptable.jpg" alt="">
+    </div>
+
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target = _blank>
+                <img src="./Assets/fbFix.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target = _blank>
+                <img src="./Assets/igFix.png" alt="">
+            </a>
+            <a href="https://twitter.com/?lang=en" target = _blank>
+                <img src="./Assets/twitFix.png" alt="">
+            </a>
+        </div>
+        <div class="trademark">
+            &copy 2020. All Rights Reserved. Heritage
+        </div>
+        <div class="watermark">
+            Powered by Dinion
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Please wait, the waiter is on the way to your table.</p>
+        <a class="popup-close" href="#closed">X</a>
+    </div>
+
+    <audio src="./Homepage/Assets/welcome to heritage.m4a" id="welcome-audios"></audio>
+    <audio src="./Assets/mixkit-notification-bike-bell-594.wav" id="waiter-audio"></audio>
+
+    <script src="./HomePage/Homepage.js"></script>
+</body>
+</html> 
