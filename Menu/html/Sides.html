@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu : Sides</title>
+    <link rel="stylesheet" href="/Menu/css/menu.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <!-- ini buat logo yg kiri atas -->
+        <div class="logo">
+            <img src="/Assets/Heritage Logo.png" alt="LogoDinion">
+        </div>
+        <!-- buat navbar tengah -->
+        <ul>
+            <li class = "home"><a href="/HomePage/homePage.html">Home</a></li>     
+            <li class = "menunav"><a href="bestseller.html">Menu</a></li>
+            <!--ini buat dropdown -->
+            <li class = "orderList" id="orderlistbutton">Order List
+                <ul class="dropdown">
+                    <li><a href="../../PendingOrder/OrderList-Pending.html">Pending Order</a></li>
+                    <li><a href="../../OrderStatus/orderList-orderStatus.html">Order Status</a></li>
+                </ul> 
+            </li>     
+            <li><a href="/Review/Review.html">Review</a></li>  
+        </ul>
+        <!-- ini buat logo bell -->
+        <div class="waiter">
+            <a href="#popup">
+                <img src="/Assets/waitericon.png" alt="WaiterIcon" id="waiter-icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="menu">
+            <a href="Starters.html"><button class="button">Starters</button></a>
+            <a href="MainCourse.html"><button class="button">Main Course</button></a>
+            <a href="Desserts.html"><button class="button">Desserts</button></a>
+            <a href="Sides.html"><button class="button" id="sidesbutton">Sides</button></a>
+            <a href="Drinks.html"><button class="button">Drinks</button></a>
+        </div>
+        <hr>
+        
+        <div class="menulist">
+            <ul class="mcfoods">
+                <li><img id="16_img"></li>
+                <div class="menutext"><li>Fresh Herb Risotto</li></div>
+                <div class="menuprice"><li>Rp. 70.000</li></div>
+                <div class="cartmin"><button id="min-16"><img src="/Menu/Assets/minusoutline.png" class="minus"></button></div>
+                <div class="value"><p id="16">0</p></div>
+                <div class="cartplus"><button id="plus-16"><img src="/Menu/Assets/plusoutline.png" class ="plus"></button></div>
+            </ul>
+            <ul class="mcfoods">
+                <li><img id="17_img"></li>
+                <div class="menutext"><li>Creamed Fresh Baby Asparagus</li></div>
+                <div class="menuprice"><li>Rp. 70.000</li></div>
+                <div class="cartmin"><button id="min-17"><img src="/Menu/Assets/minusoutline.png" class="minus"></button></div>
+                <div class="value"><p id="17">0</p></div>
+                <div class="cartplus"><button id="plus-17"><img src="/Menu/Assets/plusoutline.png" class ="plus"></button></div>
+            </ul>
+            <ul class="mcfoods">
+                <li><img id="18_img"></li>
+                <div class="menutext"><li>Mashed Potatoes</li></div>
+                <div class="menuprice"><li>Rp. 55.000</li></div>
+                <div class="cartmin"><button id="min-18"><img src="/Menu/Assets/minusoutline.png" class="minus"></button></div>
+                <div class="value"><p id="18">0</p></div>
+                <div class="cartplus"><button id="plus-18"><img src="/Menu/Assets/plusoutline.png" class ="plus"></button></div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target = _blank>
+                <img src="/Assets/fbFix.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target = _blank>
+                <img src="/Assets/igFix.png" alt="">
+            </a>
+            <a href="https://twitter.com/?lang=en" target = _blank>
+                <img src="/Assets/twitFix.png" alt="">
+            </a>
+        </div>
+        <div class="trademark">
+            &copy 2020. All Rights Reserved. Heritage
+        </div>
+        <div class="watermark">
+            Powered by Dinion
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Please wait, the waiter is on the way to your table.</p>
+        <a class="popup-close" href="#closed">X</a>
+    </div>
+
+    <audio src="../../../Assets/mixkit-notification-bike-bell-594.wav" id="waiter-audio"></audio>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html> 
